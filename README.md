@@ -50,7 +50,7 @@ $ npm run test:cov
 | Endpoint  | Usage  | Example  |
 |--- |--- |--- |
 | `GET` /  | Health check  | <https://partners.local.com> (<localhost:7000>) <182.39.0.53>  |
-| `GET` /api/v1/partners  | Return a list of partners and can be optionally filtered by `reference` and `range`  | <https://partners.local.com/partners?reference=51.5144636,-0.142571&range=5.13&page=1&limit=2&sort=organization&desc=false> (<localhost:7004/partners?reference=51.5144636,-0.142571&range=5.13&page=1&limit=2&sort=organization&desc=false>) <182.39.0.172/partners?reference=51.5144636,-0.142571&range=5.13&page=1&limit=2&sort=organization&desc=false> |
+| `GET` /api/v1/partners  | Return a list of partners and can be optionally filtered by `reference` and `range`  | <https://partners.local.com/partners?reference=51.5144636,-0.142571&range=5.13&page=1&limit=2&sort=organization&desc=false> (<localhost:7006/partners?reference=51.5144636,-0.142571&range=5.13&page=1&limit=2&sort=organization&desc=false>) <182.39.0.172/partners?reference=51.5144636,-0.142571&range=5.13&page=1&limit=2&sort=organization&desc=false> |
 
 ## Stay in touch
 
