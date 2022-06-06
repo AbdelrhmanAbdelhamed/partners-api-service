@@ -37,7 +37,7 @@ services:
       dockerfile: ./Dockerfile
     image: partners-api-service
     ports:
-      - 7006:3000
+      - 7006:8080
       - 7007:9229
     networks:
         partners-network:
