@@ -15,7 +15,7 @@ import { delayMiddleware } from './middlewares';
 async function bootstrap() {
   const APP_NAME = process.env.npm_package_name || 'partners-service';
   const APP_VERSION = process.env.npm_package_version || '1.0.0';
-  const APP_PORT = process.env.APP_PORT || 8080;
+  const PORT = process.env.PORT || 8080;
 
   const app = await NestFactory.create<NestApplication>(AppModule);
 
@@ -80,7 +80,7 @@ async function bootstrap() {
 
   app.enableCors();
 
-  await app.listen(APP_PORT, '0.0.0.0');
+  await app.listen(PORT, '0.0.0.0');
   console.log(`partners-service is running on: ${await app.getUrl()}`);
 }
 bootstrap();
