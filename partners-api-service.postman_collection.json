@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "11b18341-3a7b-4001-aa38-0a101943e3f9",
+		"name": "Partners Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3105498"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/partners?reference=51.5144636,-0.142571&range=5.13&unit=km&page=1&limit=2&sort=organization&desc=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"partners"
+					],
+					"query": [
+						{
+							"key": "reference",
+							"value": "51.5144636,-0.142571"
+						},
+						{
+							"key": "range",
+							"value": "5.13"
+						},
+						{
+							"key": "unit",
+							"value": "km"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "sort",
+							"value": "organization"
+						},
+						{
+							"key": "desc",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:7006/api/v1"
+		}
+	]
+}
